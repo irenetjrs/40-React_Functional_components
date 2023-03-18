@@ -2,7 +2,7 @@ import React from "react";
 
 function ArticleBody(props) {
 return (
-        <div className="article__body">
+        <div className={`article__body ${props.mark ? 'read' : ''}`}>
           <h3 className="article__description">
             {!props.show && props.text.description }
           </h3>
